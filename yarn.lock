@@ -1085,6 +1085,11 @@
     "redux-thunk" "^2.4.2"
     "reselect" "^4.1.8"
 
+"@remix-run/router@1.8.0":
+  "integrity" "sha512-mrfKqIHnSZRyIzBcanNJmVQELTnX+qagEDlcKO90RgRBVOZGSGvZKeDihTRfWcqoDn5N/NkUcwWTccnpN18Tfg=="
+  "resolved" "https://registry.npmjs.org/@remix-run/router/-/router-1.8.0.tgz"
+  "version" "1.8.0"
+
 "@stylelint/postcss-css-in-js@^0.37.2":
   "integrity" "sha512-scLk3cSH1H9KggSniseb2KNAU5D9FWc3H7BxCSAIdtU9OWIyw0zkEZ9qEKHryRM+SExYXRKNb7tOOVNAsQ3iwg=="
   "resolved" "https://registry.npmjs.org/@stylelint/postcss-css-in-js/-/postcss-css-in-js-0.37.3.tgz"
@@ -2825,7 +2830,14 @@
     "react-is" "^18.0.0"
     "use-sync-external-store" "^1.0.0"
 
-"react@^16.8 || ^17.0 || ^18.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.9.0 || ^17.0.0 || ^18", "react@^18.2.0":
+"react-router@^6.15.0":
+  "integrity" "sha512-NIytlzvzLwJkCQj2HLefmeakxxWHWAP+02EGqWEZy+DgfHHKQMUoBBjUQLOtFInBMhWtb3hiUy6MfFgwLjXhqg=="
+  "resolved" "https://registry.npmjs.org/react-router/-/react-router-6.15.0.tgz"
+  "version" "6.15.0"
+  dependencies:
+    "@remix-run/router" "1.8.0"
+
+"react@^16.8 || ^17.0 || ^18.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.9.0 || ^17.0.0 || ^18", "react@^18.2.0", "react@>=16.8":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
