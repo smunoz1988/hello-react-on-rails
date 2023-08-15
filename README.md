@@ -85,10 +85,28 @@ bundle install
 
 ### Usage
 
-To run the project, navigate to the project directory and execute the following command:
+To run the project, navigate to the project directory and execute the following commands:
+
+setup dependencies:
 
 ```sh
-  ruby main.rb
+  bundle install
+```
+```sh
+  yarn add react react-dom
+  yarn add @babel/core @babel/preset-env @babel/preset-react babel-loader --dev
+```
+
+build app:
+
+```sh
+  yarn run build
+```
+
+run server
+
+```sh
+  ./bin/dev
 ```
 
 ### Run tests
@@ -100,6 +118,9 @@ Run the following command
 rubocop
 ```
 
+```sh
+npx eslint "**/*.{js,jsx}"
+```
 ## 👥 Author <a name="authors"></a>
 
 👤 **Santiago Munoz**
