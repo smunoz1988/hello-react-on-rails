@@ -1,26 +1,19 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getGreetings } from '../redux/greetings/greetingsSlice';
 
 const Greetings = () => {
-  const [greetingsData, setGreetingsData] = useState([]);
-  const url = "http://localhost:3000/api/v1/messages";
+  const dispatch = useDispatch();
+  const greetingsData = useSelector((state) => state.greeting);
 
   useEffect(() => {
-    axios.get(url)
-      .then((res) => {
-        setGreetingsData(res.data);
-      })
-      .catch((err) => {
-        console.error('Error fetching data:', err);
-      });
-  }, []);
-
-  console.log(greetingsData);
+    dispatch(getGreetings());
+  }, [dispatch]);
 
   return (
     <div>
-      <h2>Greetings</h2>
-      <p>{greetingsData.greeting}</p>
+      <h2>Refresh to get a new Greeting</h2>
+      <p>{greetingsData.greetings.greeting}</p>
     </div>
   );
 };
